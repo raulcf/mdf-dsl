@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.codehaus.groovy:groovy-all:2.3.6'
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.1'
+}
